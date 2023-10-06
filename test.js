@@ -1,4 +1,4 @@
-alert ("Hallo in extra Datei");
+alert ("Hallo in extra Datei");  // alert is a already building in function from JavaScripts
 var myVariable ="can not start with a number";
 var anotherVariable; // is not defined yet 
 var myVar = "hello";
@@ -173,3 +173,33 @@ var links2 = document.getElementsByTagName("a");
 for (i = 0 ; i < links2.length; i++){
     links[i].className= "link-"+ i;
 }
+
+
+//################ function ####################
+
+function getAverage(a, b){  //give the function the variable a and b
+
+    var average = (a + b) / 2;
+    console.log(average);
+
+}
+
+
+//called the function out used it
+getAverage(5,10); //gives out 7.5
+
+
+getAverage(); //gives out an Nan because its a+b is not a number
+
+getAverage(5,10,8); // give out 7.5  too, because everything that is to many in the paramenter will be ignort
+
+
+
+function getPrice (priceOne, amount){
+    var price = priceOne * amount;
+    return price;
+}
+
+var myResult = getPrice(2, 15);
+
+console.log(myResult +  "is the price");
