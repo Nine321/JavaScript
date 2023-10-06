@@ -38,3 +38,79 @@ document.write (vergleich); // gives out false#
 document.write(Boolean(5)); //gives out true
 document.write(Boolean(-10)); //gives out true
 document.write(Boolean(0)); //gives out false only 0  and -0 from the numbers gives out false
+
+document.write(Boolean("hello")); // its true because something is inside
+document.write(Boolean(""));  //is false because it is empty
+
+
+//################ Statement ################
+
+ 
+var LikeMeat = false;
+
+if (LikeMeat){
+    document.write("you are not a vegetarien")
+} else {
+    document.write("you are a vegeatrian")
+}
+
+
+var age = 29;
+
+if (age > 30){
+    document.write("you are over 30");
+
+}else if (age >20){
+    document.write("you are over 20");
+}
+else if (age >10){
+    document.write("you are over 10");
+} else {
+    document.write("you are 10 or under 10")
+}
+
+
+//############# Comparison Operators #############
+var x = 5;
+
+if ( x < 6 ) document.write("not it is wrong"); 
+
+if ( x > 6 ) document.write("yes it is true"); 
+
+if ( x <= 5 ) document.write("yes it is true"); 
+
+if ( x >= 6 ) document.write("yes it is true"); 
+
+if ( x == 5 ) document.write("yes it is true");
+
+if ( x == "5" ) document.write("yes it is true, compares only the value not the datatype");
+
+if ( x === "5" ) document.write("no its wrong, because it it a different Datatype");
+
+if ( !(x === "5") ) document.write("it is true ,because it looks if its NOT! the same");
+ 
+if (x != "5") document.write("its not true because it checks only the value and there are both 5 ");
+
+if (x !== "5") document.write("its true because \"5\" and 5 are not the same datatype");  //  \"  to write " in the output
+
+
+
+// ###### logical Operators #################
+
+var age2  = 25 ;
+
+if (age2 >= 18 && age < 30){
+    document.write("you are under 30 and over 18 or 18");
+} else {
+    document.write("you are not in the right age range");
+}
+
+
+if (age2 > 18  || age2 < 30){ // Or  it is enough if only one is true
+    document.write("you are not in the right age range");
+
+
+} else {
+    document.write("you are under 30 and over 18 or 18");
+}
+    
