@@ -106,7 +106,8 @@ if (age2 >= 18 && age < 30){
 }
 
 
-if (age2 > 18  || age2 < 30){ // Or  it is enough if only one is true
+if (age2 < 18  || age2 > 30 || age2 === 25){ // Or  it is enough if only one is true
+    //if age is over 30 or under 18  or age is 25 it is true
     document.write("you are not in the right age range");
 
 
@@ -114,3 +115,61 @@ if (age2 > 18  || age2 < 30){ // Or  it is enough if only one is true
     document.write("you are under 30 and over 18 or 18");
 }
     
+
+//################ Loop ########################################
+// --------------While ----------------
+var age3 = 5 ;
+while (age3 < 10) {
+    age3++;
+    console.log(age3); // outputs only in the console
+}
+document.write(age3 + " is youre new age");
+
+
+
+
+//--------------For------------------
+for (age5 =5; age5 <10; age5++){ //dont need var for age5 because it is only used in the for loop
+    console.log("you are to young");
+}
+document.write("you are now old enought")
+
+
+
+var links = document.getElementsByTagName("a");
+var numbers = 0;
+
+for(i=1 ;i <= links.length; i++){
+    console.log( i + " a tags are counted")    
+    numbers++;
+}
+
+document.write("Thera are" +  numbers + " on the index page");
+
+//----------------Break & Continue -----------------------
+
+for(i = 0; i < 10 ; i++){
+
+    if(i ===7 ){
+        continue; // skips the 7 and goes back to the bedinging to the loop
+    }
+    console.log(i +  " continue"); 
+}
+
+
+for(i = 0; i < 10 ; i++){
+
+    if(i ===7 ){
+        break; // ends the loop with with 6 shown in the console
+    }
+    console.log(i + " break"); 
+}
+
+
+//---------------practical examples for loops
+
+
+var links2 = document.getElementsByTagName("a");
+for (i = 0 ; i < links2.length; i++){
+    links[i].className= "link-"+ i;
+}
