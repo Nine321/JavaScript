@@ -65,3 +65,80 @@ if(!isNaN(d)) {   //checkes if d is Not NOT a Number (double negativ)
     console.log (d + " is not a datatyp number");
 }
 
+//################# String #####################################
+
+
+var myString = "I am an String";
+var myString2 = 'I am although a String';
+var stringTest = 'String "test" with qoutes in String';
+var StringTest2 = "String \" quotes\" test \' two ";
+
+console.log(stringTest);
+console.log(StringTest2);
+
+console.log(myString.length); //property of a String
+console.log(myString.toUpperCase()); //method of a String
+console.log(myString.toLowerCase());
+
+console.log(myString.indexOf("an")); //shows where the index starts
+console.log(myString.indexOf("ninja")); //shows -1 because ninja is not in the string
+
+if (myString.indexOf("ninja") === -1) {
+    console.log("the word ninja is not in that string");
+}
+
+
+var String1 = "abc";
+var String2 = "cba";
+var String3 = "ABC";
+
+if (String1 === String2){ //false
+    console.log("it is true");
+}else {
+    console.log("it is false");
+}
+
+if (String1 === String3){ // false because it is case senstiv
+    console.log("it is true");
+}else {
+    console.log("it is false");
+}
+
+if (String1 < String2){  //a is smaller than c
+    console.log("true because a is befor c");
+}else {
+    console.log("false because a is befor c");
+}
+
+
+//lower case letter is always greater than a uppercase Letter
+
+console.log("a" < "b"); //true
+console.log("a" < "B"); //false
+console.log("A" < "b"); //true
+console.log("A" < "B"); //true
+
+
+//############ Splitting & Slicing String ################
+
+var Strg = "hello world";
+
+var Strg2 = Strg.slice(2, 9); //llo wor  starts with 2 and end befor 9
+
+document.write(Strg2);
+
+var test3 = "0123456789";
+
+var Strg3 = test3.slice(2, 9);
+document.write(Strg3); //2345678
+
+var test4 = test3.slice(4); // von 4 till the end
+console.log(test4);
+
+
+
+
+var tags = "kiwi, apple, cherry, orange"; 
+var tagsArray = tags.split(","); //splits the tags at every  comma and puts it into an array
+console.log(tagsArray);
+
