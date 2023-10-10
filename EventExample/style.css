@@ -1,0 +1,35 @@
+#content {
+    width: 400px;
+    padding: 20px;
+    padding-top: 0;
+    font-size: 18px;
+    color: #8d1010;
+    margin: 0 auto;
+
+    max-height: 270px;
+    overflow: hidden;
+
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    transition: max-height 0.7s;
+}
+#content.open {
+    max-height: 1000px;
+
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    transition: max-height 0.7s;
+}
+
+#more {
+    background-color: yellowgreen;
+    color: aliceblue;
+    display: block;
+    width: 160px;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    cursor: pointer;
+}
