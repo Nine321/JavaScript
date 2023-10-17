@@ -40,6 +40,6 @@ title.classList.toggle("test"); //adding class again
 console.log(title.getAttribute("class"));
 
 
-title.classList.toggle("test2");
+title.classList.toggle("test2"); //adiing another class with a new name
 
 console.log(title.getAttribute("class"));

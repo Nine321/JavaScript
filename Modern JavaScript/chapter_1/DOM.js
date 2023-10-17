@@ -178,4 +178,4 @@ content2.classList.add("newClass"); //adding a new class
 
 console.log(content2.classList);
 
-content2.classList.remove("success");
+content2.classList.remove("success"); //deleting classes
